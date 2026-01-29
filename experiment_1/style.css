@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #eef6ff, #f8f0ff);
+  margin: 0;
+  color: #222;
+}
+
+.top {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  padding: 16px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.top h1 {
+  margin: 0;
+  color: white;
+}
+
+.tiny {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+.nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  display: inline-block;
+  margin-right: 0;
+  color: #0f172a;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.nav a:hover {
+  background: white;
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 0 12px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.jobs {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jobs th,
+.jobs td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.jobs th {
+  background: #fff7ed;
+}
+
+.jobs tbody tr:nth-child(odd) {
+  background: #f8fafc;
+}
+
+.jobs tbody tr:hover {
+  background: #ecfeff;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: 2px solid rgba(6, 182, 212, 0.55);
+  border-color: rgba(6, 182, 212, 0.65);
+}
+
+fieldset {
+  border: 1px dashed rgba(79, 70, 229, 0.35);
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+legend {
+  padding: 0 6px;
+}
+
+.check {
+  display: block;
+  margin-top: 10px;
+}
+
+.check input {
+  width: auto;
+  margin-right: 6px;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+.secondary {
+  margin-left: 8px;
+  background: #f97316;
+  border-color: rgba(0, 0, 0, 0.18);
+}
+
+.secondary:hover {
+  background: #ea580c;
+}
+
+.foot {
+  text-align: center;
+  color: #334155;
+  padding: 12px;
+}
