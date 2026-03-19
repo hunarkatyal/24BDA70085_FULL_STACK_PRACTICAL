@@ -1,0 +1,193 @@
+.workspace-layout {
+  width: min(1040px, 100% - 2rem);
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.workspace-header {
+  padding: 1.75rem;
+  border: 1px solid #d9dee8;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #ffffff, #f8fbff);
+}
+
+.workspace-header h1 {
+  margin: 0.25rem 0;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+}
+
+.path-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.subtitle {
+  margin: 0;
+  color: #4b5563;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stats > div {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.9rem;
+  background: #fff;
+  padding: 1rem;
+}
+
+.stats h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.stats p {
+  margin: 0.4rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.team-panel {
+  border: 1px solid #dbe3f0;
+  border-radius: 1rem;
+  padding: 1.3rem;
+  background: #fff;
+}
+
+.team-panel-head h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.team-panel-head p {
+  margin: 0.35rem 0 1rem;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.feature-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.feature-card-head {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.chip {
+  margin: 0;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 999px;
+  padding: 0.22rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.chip-priority {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.feature-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.task-note {
+  margin: 0.45rem 0 1rem;
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-actions button {
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+}
+
+.card-actions .ghost {
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+@media (max-width: 700px) {
+  .workspace-layout {
+    width: min(1040px, 100% - 1rem);
+    margin: 1rem auto;
+  }
+
+  .workspace-header {
+    padding: 1rem;
+  }
+
+  .team-panel {
+    padding: 1rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .workspace-header,
+  .stats > div,
+  .team-panel,
+  .feature-card {
+    background: #0f172a;
+    border-color: #1e293b;
+  }
+
+  .path-hint,
+  .subtitle,
+  .team-panel-head p,
+  .task-note,
+  .stats h4 {
+    color: #94a3b8;
+  }
+
+  .chip {
+    background: #1e3a8a;
+    color: #bfdbfe;
+  }
+
+  .chip-priority {
+    background: #4c1d95;
+    color: #ddd6fe;
+  }
+
+  .card-actions .ghost {
+    background: #1e1b4b;
+    color: #c7d2fe;
+  }
+}
