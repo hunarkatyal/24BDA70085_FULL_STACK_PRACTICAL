@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Mini Job Portal</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<header class="top">
+			<h1 align = "center">Mini Job Portal</h1>
+			<p class="tiny" align = "center">A simple place to apply for jobs (demo)</p>
+
+			<nav class="nav">
+				<a href="#about">About</a>
+				<a href="#jobs">Jobs</a>
+				<a href="#apply">Apply</a>
+			</nav>
+		</header>
+
+		<main class="wrap">
+			<section id="about" class="card">
+				<h2>About</h2>
+				<p>
+					Welcome to Mini Job Portal — a simple place to browse a few openings and submit your application.
+					We review applications and contact shortlisted candidates by email.
+				</p>
+				<p>
+					How it works:
+				</p>
+				<ul>
+					<li>Check the job list below.</li>
+					<li>Choose the job you want in the form.</li>
+					<li>Fill in your details and a short message.</li>
+					<li>Click “Submit Application”.</li>
+				</ul>
+				<p>
+					Need help? Email us at <strong>jobs@minijobportal.example</strong>.
+					We respect your privacy and only use your info for hiring.
+				</p>
+			</section>
+
+			<section id="jobs" class="card">
+				<h2>Open Jobs</h2>
+				<p>Pick a job and then fill the form below.</p>
+
+				<table class="jobs">
+					<thead>
+						<tr>
+							<th>Job Title</th>
+							<th>Location</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Junior Frontend Intern</td>
+							<td>Remote</td>
+							<td>Internship</td>
+						</tr>
+						<tr>
+							<td>Customer Support Assistant</td>
+							<td>Erbil</td>
+							<td>Full-time</td>
+						</tr>
+						<tr>
+							<td>Office Admin (Entry Level)</td>
+							<td>Sulaymaniyah</td>
+							<td>Part-time</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="apply" class="card">
+				<h2>Apply Now</h2>
+				<p class="tiny">This form is just HTML (it won’t actually send anything).</p>
+
+				<form action="#" method="post" class="form">
+					<fieldset>
+						<legend>Your Info</legend>
+
+						<label for="fullName">Full name</label>
+						<input id="fullName" name="fullName" type="text" placeholder="Your name" required />
+
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" placeholder="name@example.com" required />
+
+						<label for="phone">Phone</label>
+						<input id="phone" name="phone" type="tel" placeholder="0750..." />
+					</fieldset>
+
+					<fieldset>
+						<legend>Job Details</legend>
+
+						<label for="job">Job you want</label>
+						<select id="job" name="job" required>
+							<option value="">-- Select a job --</option>
+							<option>Junior Frontend Intern</option>
+							<option>Customer Support Assistant</option>
+							<option>Office Admin (Entry Level)</option>
+						</select>
+
+						<label for="start">When can you start?</label>
+						<input id="start" name="start" type="date" />
+
+						<label for="experience">Years of experience</label>
+						<input id="experience" name="experience" type="number" min="0" max="50" value="0" />
+					</fieldset>
+
+					<fieldset>
+						<legend>More</legend>
+
+						<label for="message">Why should we hire you?</label>
+						<textarea
+							id="message"
+							name="message"
+							rows="5"
+							placeholder="Write a short message..."
+						></textarea>
+
+						<label class="check">
+							<input type="checkbox" name="agree" required />
+							I confirm my info is correct
+						</label>
+					</fieldset>
+
+					<div class="actions">
+						<button type="submit">Submit Application</button>
+						<button type="reset" class="secondary">Clear</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<footer class="foot">
+			<p>Made by hunr ktyl • 2026</p>
+		</footer>
+	</body>
+</html>

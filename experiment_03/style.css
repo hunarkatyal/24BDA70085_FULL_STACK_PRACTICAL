@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.menu button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.jobs li {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+.apply-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.apply-form input,
+.apply-form select {
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.apply-form input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.apply-form input[type="submit"]:hover {
+    background-color: green;
+}
+
+
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin-top: 20px;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .apply-form,
+.dark-mode .profile-card {
+    background-color: #1e1e1e;
+    color: white;
+}

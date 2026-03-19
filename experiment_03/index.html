@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>JOB PORTAL</h1>
+
+    <h3>Menu</h3>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Companies</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button onclick="theme()">Theme Mode</button></li>
+    </ul>
+
+    <hr>
+
+    <h2>Apply for a Job</h2>
+
+    <form class="apply-form" id="jobForm">
+        <ul>
+            <li>
+                <label>Full Name:</label><br>
+                <input type="text" id="name" required>
+            </li>
+            <br>
+
+            <li>
+                <label>Email:</label><br>
+                <input type="email" id="email" required>
+            </li>
+            <br>
+
+            <li>
+                <label>Experience (Years):</label><br>
+                <input type="number" id="experience" required>
+            </li>
+            <br>
+
+            <li>
+                <label>Select Job Role:</label><br>
+                <select id="role">
+                    <option>Software Developer</option>
+                    <option>Data Analyst</option>
+                    <option>Web Designer</option>
+                </select>
+            </li>
+            <br>
+
+            <li>
+                <input type="submit" value="Apply">
+            </li>
+        </ul>
+    </form>
+
+    <hr>
+
+    <h2>User Profile</h2>
+
+    <div id="profile" class="profile-card">
+        <p>No application submitted yet.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
